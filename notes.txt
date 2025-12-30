@@ -66,3 +66,7 @@ Procedure to Create New App
           <a class="nav-link" href="#">Order History</a>
         </div>
       </li> -->
+
+for github
+git commit -am "create a md file"
+git push -u 
