@@ -1,0 +1,56 @@
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <button class="btn btn-outline-light"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebar">
+      ☰
+    </button>
+    <span class="navbar-brand">{{this.loggedUserData.email}}</span>
+  </div>
+<div class="offcanvas offcanvas-start bg-dark text-white" id="sidebar">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menu</h5>
+    <button type="button" class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul class="nav flex-column">
+
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">
+          <i class="bi bi-speedometer2 me-2"></i> Dashboard
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#usersMenu">
+          <i class="bi bi-people me-2"></i> Users
+        </a>
+        <div class="collapse submenu" id="usersMenu">
+          <a class="nav-link" href="#">Add User</a>
+          <a class="nav-link" href="#">User List</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#productMenu">
+          <i class="bi bi-box me-2"></i> Products
+        </a>
+        <div class="collapse submenu" id="productMenu">
+          <a class="nav-link" href="#">Add Product</a>
+          <a class="nav-link" href="#">Product List</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">
+          <i class="bi bi-receipt me-2"></i> Orders
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+</nav> 
+
+<router-outlet></router-outlet>

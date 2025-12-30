@@ -1,0 +1,68 @@
+
+1.clone the repositary from github
+  git clone https://github.com/santoshmswami/batchrecordingapp.git
+2.create angular project
+  ng new batchrecordingapp
+3.install bootstrap
+  npm i bootstrap  or (npm install bootstrap --save)
+  "styles": [
+     "node_modules/bootstrap/dist/css/bootstrap.min.css",
+     "src/styles.css"   
+    ],
+    "scripts": [
+    "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ]
+4.open the app.route.ts define the defauly routes
+5.we are going to use template from so we need to bind 
+  in the html using [ngModel]
+  [(ngModel)]="loginObj.email" name="email"
+  
+  login.ts
+  import {FormModule} from '@angular/forms
+  @componets({
+     imports [FormModule]
+  })
+  export class Login {
+    email:"",
+    password:""
+  }
+
+
+
+'===============
+      <li class="nav-item">
+        <a class="nav-link d-flex justify-content-between align-items-center collapsed"
+           data-bs-toggle="collapse" href="#usersMenu">
+          <span><i class="bi bi-people me-2"></i> Users</span>
+          <i class="bi bi-chevron-down rotate"></i>
+        </a>
+        <div class="collapse submenu" id="usersMenu">
+          <a class="nav-link" href="#">Add User</a>
+          <a class="nav-link" href="#">User List</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link d-flex justify-content-between align-items-center collapsed"
+           data-bs-toggle="collapse" href="#productMenu">
+          <span><i class="bi bi-box me-2"></i> Products</span>
+          <i class="bi bi-chevron-down rotate"></i>
+        </a>
+        <div class="collapse submenu" id="productMenu">
+          <a class="nav-link" href="#">Add Product</a>
+          <a class="nav-link" href="#">Product List</a>
+          <a class="nav-link" href="#">Categories</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link d-flex justify-content-between align-items-center collapsed"
+           data-bs-toggle="collapse" href="#orderMenu">
+          <span><i class="bi bi-receipt me-2"></i> Orders</span>
+          <i class="bi bi-chevron-down rotate"></i>
+        </a>
+        <div class="collapse submenu" id="orderMenu">
+          <a class="nav-link" href="#">New Orders</a>
+          <a class="nav-link" href="#">Order History</a>
+        </div>
+      </li> -->

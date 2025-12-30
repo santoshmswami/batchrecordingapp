@@ -1,0 +1,28 @@
+  .sidebar {
+    width: 260px;
+    min-height: 100vh;
+    background: #1e1e2f;
+  }
+  .sidebar .nav-link {
+    color: #cfd3ec;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin: 4px 10px;
+  }
+  .sidebar .nav-link:hover {
+    background: #2f2f46;
+    color: #fff;
+  }
+  .submenu .nav-link {
+    padding-left: 50px;
+    font-size: 0.9rem;
+  }
+  .rotate {
+    transition: transform 0.3s ease;
+  }
+  .collapsed .rotate {
+    transform: rotate(-90deg);
+  }
+  .navbar button:hover {
+  background-color: #f8f9fa;
+}
