@@ -1,4 +1,4 @@
-
+Procedure to Create New App
 1.clone the repositary from github
   git clone https://github.com/santoshmswami/batchrecordingapp.git
 2.create angular project
